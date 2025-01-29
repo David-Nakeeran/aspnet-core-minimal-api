@@ -1,1 +1,20 @@
-GET https://localhost:7047
+GET https://localhost:7047/todos
+###
+
+POST https://localhost:7047/todos
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Write another demo",
+    "dueDate": "2023-12-31",
+    "isCompleted": false
+}
+
+###
+
+GET https://localhost:7047/todos/2
+###
+
+DELETE https://localhost:7047/todos/2
+###
